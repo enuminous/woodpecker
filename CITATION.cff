@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use WOODPECKER, cite this repository and the specific version or commit."
+title: "WOODPECKER — EFMW Zoo Animal #48 Candidate"
+type: software
+authors:
+  - family-names: Wright
+    given-names: Matthew Chenoweth
+version: 0.1.0
+date-released: 2026-09-10
+repository-code: "https://github.com/enuminous/WOODPECKER"
+abstract: "A fixed-operation ablation and counterfactual necessity tester for the EFMW Zoo."

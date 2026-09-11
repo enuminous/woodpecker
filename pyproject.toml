@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "efmw-woodpecker"
+version = "0.1.0"
+description = "WOODPECKER — EFMW Zoo Animal #48 candidate: ablation and counterfactual necessity testing"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "SEE LICENSE"}
+authors = [{name = "Matthew Chenoweth Wright / Monolithic"}]
+keywords = ["EFMW", "ablation", "counterfactual", "necessity", "testing", "AI assurance"]
+
+[project.scripts]
+woodpecker = "woodpecker.__main__:main"
+
+[tool.setuptools]
+packages = ["woodpecker"]
