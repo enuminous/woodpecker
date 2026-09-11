@@ -1,0 +1,20 @@
+{
+  "claim": "Component X is essential.",
+  "component": "X",
+  "baseline_value": 100.0,
+  "ablated_value": 20.0,
+  "metric": "performance",
+  "higher_is_better": true,
+  "epsilon": 2.0,
+  "contributory_fraction": 0.25,
+  "ablation": "remove X",
+  "preserved_conditions": [
+    "same data"
+  ],
+  "violations": [
+    "removing X also changed preprocessing pipeline"
+  ],
+  "pre_registered": true,
+  "proxy_leakage": false,
+  "claim_type": "necessity"
+}
