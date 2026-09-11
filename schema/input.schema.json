@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WOODPECKER input case",
+  "type": "object",
+  "required": [
+    "claim",
+    "component",
+    "baseline_value",
+    "ablated_value",
+    "metric",
+    "higher_is_better",
+    "epsilon",
+    "contributory_fraction",
+    "ablation",
+    "preserved_conditions",
+    "violations",
+    "pre_registered",
+    "proxy_leakage",
+    "claim_type"
+  ],
+  "properties": {
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "component": {
+      "type": "string",
+      "minLength": 1
+    },
+    "baseline_value": {
+      "type": "number"
+    },
+    "ablated_value": {
+      "type": "number"
+    },
+    "metric": {
+      "type": "string",
+      "minLength": 1
+    },
+    "higher_is_better": {
+      "type": "boolean"
+    },
+    "epsilon": {
+      "type": "number",
+      "minimum": 0
+    },
+    "contributory_fraction": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "ablation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "preserved_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pre_registered": {
+      "type": "boolean"
+    },
+    "proxy_leakage": {
+      "type": "boolean"
+    },
+    "claim_type": {
+      "enum": [
+        "necessity",
+        "contribution"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
